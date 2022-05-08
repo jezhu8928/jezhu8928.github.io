@@ -3,8 +3,181 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jessica Zhu</title>
+    <title>jessica zhu</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c06a21b1c4.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
   </head>
   <body>
+    <button class="scroll-top-btn" id="scrollToTop">
+      <i class="fa-solid fa-chevron-up arrow"></i>
+    </button>
+
+    <nav>
+      <div class="nav-bar-wrapper">
+        <div class="left-home-icon">
+          <div class="site-icon-wrapper">
+            <i class="fa-solid fa-basketball site-icon"></i>
+          </div>
+          <div class="bold nav-bar-title">
+            <h4>jessica zhu</h4>
+          </div>
+        </div>
+        <div class="right-page-links">
+          <a class="page-link" href="#about">about me</a>
+          <a class="page-link" href="#my-work">work</a>
+          <a class="page-link">resume</a>
+        </div>
+        <div class="hamburger-menu">
+          <i class="fa-solid fa-bars hamburger-menu-icon"></i>
+        </div>
+      </div>
+    </nav>
+    <section class="overlay-nav-menu translucent">
+      <div class="overlay-page-links">
+        <a class="page-link overlay-link" href="#about">about me</a>
+        <a class="page-link overlay-link" href="#my-work">work</a>
+        <a class="page-link overlay-link">resume</a>
+      </div>
+    </section>
+
+    <section class="hero-section">
+      <div class="hero">
+        <div class="left-hero-wrapper">
+            <h1 class="big-text white">hi, i'm jessica</h1>
+            <h2 class="subtitle white">systems design engineering student @uWaterloo</h2>
+            <button class="button">
+              click for my resume
+            </button>          
+        </div>
+        <div class="right-cn-symbols">
+          <h1 class="chinese-symbols white">朱</h1>
+          <h1 class="chinese-symbols white">嘉</h1>
+          <h1 class="chinese-symbols white">丽</h1>
+        </div>
+      </div>
+    </section>
+    <section class="about-me-section">
+      <h2 class="section-title" id="about">about me</h2>
+      <div class="about-me-content">
+        <img class="me-pic" src="https://images.theconversation.com/files/454130/original/file-20220324-21-15affoj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" alt="">
+        <div class="about-me-desc-wrapper">
+          <p class="about-me-desc">I'm a first year SYDE student @ uWaterloo on my way through 1B. 
+            Right now, I’m <span class="highlight-text">looking for Fall 2022 internships</span> 👀 For Winter 2022, I worked at 
+            <a href="https://www.opentext.com/" class="highlight-text" target="_blank" rel="noreferrer">OpenText</a> as a mobile developer intern, but I'm up for anything in my next co-op.
+            <br>
+            <br>
+            When I’m not (reluctantly) embracing the UW grind, I can be found watching way too many basketball games, crocheting, reading, or eating food.
+            <br>
+            <br>
+            recent activity...
+            <ul class="rec-list">
+              <li>🎥&emsp;first cow, dir. kelly reichardt (follow my 
+                <a class="highlight-text" href="https://letterboxd.com/jesszhu/" target="_blank" rel="noreferrer">letterboxd</a>!)</li>
+              <br>
+              <li>📖&emsp;conversations with friends, sally rooney</li>
+              <br>
+              <li>🎧&emsp;titus & tate podcast</li>
+            </ul>
+          </p>
+        </div>
+        
+      </div>
+    </section>
+    <section class="work-section">
+      <h2 class="section-title" id="my-work">my work</h2>
+      <div class="work-card-display">
+        <div class="work-card">
+          <img class="work-card-img" src="https://pbs.twimg.com/profile_images/1414675753942147074/hIbE4gOV_400x400.jpg" alt="">
+          <div class="work-card-text">
+            <h3 class="work-card-title">opentext</h3>
+            <h4 class="work-card-subtitle">android developer intern</h4>
+            <h5 class="work-card-detail">january 2022 - april 2022</h5>
+            <div class="tags-wrapper">
+                <p class="skill-tag white tag-text">java</p>
+                <p class="skill-tag white tag-text">kotlin</p>
+                <p class="skill-tag white tag-text">sql</p>
+                <p class="tool-tag white tag-text">play console</p>
+                <p class="tool-tag white tag-text">firebase crashlytics</p>
+                <p class="tool-tag white tag-text">jira</p>
+                <p class="tool-tag white tag-text">postman</p>
+                <p class="tool-tag white tag-text">git</p>
+                <p class="tool-tag white tag-text">android studio</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <img class="work-card-img" src="./icon.png" alt="">
+          <div class="work-card-text">
+            <h3 class="work-card-title">stattrak (project)</h3>
+            <h4 class="work-card-subtitle">co-creator</h4>
+            <h5 class="work-card-detail">december 2019</h5>
+            <div class="tags-wrapper">
+              <p class="skill-tag white tag-text">java</p>
+              <p class="tool-tag white tag-text">android studio</p>
+              <p class="tool-tag white tag-text">git</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="filler-work-card-img">
+            <h1 class="white bold big-text">?</h1>
+          </div>
+          <div class="work-card-text">
+            <h3 class="work-card-title">top secret</h3>
+            <h4 class="work-card-subtitle">????</h4>
+            <h5 class="work-card-detail">????</h5>
+            <div class="tags-wrapper">
+              <p class="skill-tag white tag-text">javascript?</p>
+              <p class="skill-tag white tag-text">reactjs?</p>
+              <p class="tool-tag white tag-text">visual studio?</p>
+              <p class="skill-tag white tag-text">nextjs?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h2 class="white connect-message">connect with me!</h2>
+      <div class="icon-row">
+        <a href="mailto:jessica.zhu@uwaterloo.ca" target="_blank" rel="noreferrer">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-envelope icon"></i>        
+          </div>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/jessicajlzhu/" target="_blank" rel="noreferrer">
+          <div class="icon-wrapper">
+            <i class="fa-brands fa-linkedin icon"></i>
+          </div>
+        </a>
+        
+        <a href="https://github.com/jezhu8928/" target="_blank" rel="noreferrer">
+          <div class="icon-wrapper">
+            <i class="fa-brands fa-github icon"></i>        
+          </div>
+        </a>
+        <a href="https://open.spotify.com/user/jezhu8928?si=1ff5f7867ba844f1" target="_blank" rel="noreferrer"> 
+          <div class="icon-wrapper">
+            <i class="fa-brands fa-spotify icon"></i>
+          </div>
+        </a>
+        <a href="https://letterboxd.com/jesszhu/" target="_blank" rel="noreferrer">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-clapperboard icon"></i>        
+          </div>
+        </a>
+      </div>
+      <p class="white tiny-text"><i class="fa-solid fa-basketball"></i>  made by jessica zhu, 2022    <i class="fa-solid fa-basketball"></i></p>
+    </footer>
   </body>
 </html>

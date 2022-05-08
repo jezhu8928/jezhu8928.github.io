@@ -1,0 +1,515 @@
+html {
+    font-size: 16px;
+    margin: 0;
+    scroll-padding-top: 4.5rem;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.white {
+    color: white;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0rem;
+    font-family: Poppins;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    background-color: white;
+    width: 100%;
+    top: 0px;
+    position: sticky;
+    position: -webkit-sticky;
+    transition: opacity 0.2s;
+    display: flex;
+    justify-content: center;
+}
+
+.translucent {
+    opacity: 80%;
+}
+
+.nav-bar-wrapper {
+    width: 65rem;
+    display: flex;
+    height: 72px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-home-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.site-icon-wrapper {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+.site-icon{
+    font-size: 2.5rem;
+}
+
+.nav-bar-title {
+    font-family: Poppins;
+}
+
+.right-page-links {
+    display:flex;
+    justify-content: space-between;
+    width: 24rem;
+    font-weight: 600;
+}
+
+.overlay-nav-menu {
+    visibility: hidden;
+    height: fit-content;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 72;
+    left: 0;
+    right: 0;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.overlay-nav-menu.expand {
+    visibility: visible;
+}
+
+.overlay-page-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay-link {
+    margin-top: 2rem;
+}
+
+.close-btn {
+    font-size: 1.5rem;
+    margin-top: 50px;
+}
+
+.page-link {
+    text-decoration: underline solid hsla(12, 85%, 60%, 1) 0.2rem;
+    transition: text-decoration 0.5s;
+    color: black;
+
+}
+
+.page-link:hover {
+    text-decoration: underline solid hsla(232, 100%, 74%, 1) 0.2rem;
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
+    visibility: hidden;
+}
+
+.hero-section {
+    width: 100%;
+    background: linear-gradient(90deg, hsla(12, 85%, 60%, 1) 0%, hsla(232, 100%, 74%, 1) 99%);
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 33.5rem;
+    width: 65rem;
+}
+
+.left-hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+}
+
+.big-text {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    text-align: left;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: left;
+}
+
+.button {
+    width: 18rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    transition: background-color 0.5s;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: white;
+    background: none;
+    box-shadow: none;
+    border: white solid 2px;
+}
+
+.right-cn-symbols {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 9rem;  
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;  
+}
+
+.chinese-symbols {
+    font-size: 9rem;
+    font-family: "Zhi Mang Xing";
+    margin: 0;
+}
+
+.section-title {
+    text-decoration: underline solid hsla(232, 100%, 74%, 1) 0.2rem;
+    margin-bottom: 4rem;
+}
+
+.about-me-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-me-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65rem;
+}
+
+.me-pic {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about-me-desc-wrapper {
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+    outline: 1px rgba(0, 0, 0, 0.1) solid;
+
+    margin-left: 6.5rem;
+    width: 38.5rem;
+    height: fit-content;
+    border-radius: 0.5rem;
+}
+
+.about-me-desc {
+    text-align: justify;
+    line-height: 1.5;
+    margin: 1rem;
+}
+
+.highlight-text {
+    color: hsla(12, 85%, 60%, 1);
+    font-weight: 600;
+}
+
+.rec-list {
+    text-align: left;
+}
+
+.work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.work-card-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 65rem;
+}
+
+.work-card {
+    width: 17.5rem;
+    border-radius: 0.5rem;
+    text-align: start;
+    height: 32rem;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+    outline: 1px rgba(0, 0, 0, 0.1) solid;
+}
+
+.work-card-text {
+    background-color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.work-card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.work-card-subtitle {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0;
+
+}
+
+.work-card-detail {
+    margin-top: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.work-card-img {
+    width: 17.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(90deg, hsla(12, 85%, 60%, 1) 0%, hsla(232, 100%, 74%, 1) 99%);
+    height: fit-content;
+    text-align: center;
+}
+
+.connect-message {
+    font-weight:600;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+.icon:hover {
+    color: hsla(232, 100%, 74%, 1);
+}
+
+.icon-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 35rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+i {
+    color:hsla(12, 85%, 60%, 1);
+}
+
+.icon {
+    font-size: 2rem;
+    transition: color 0.5s;
+}
+
+.tiny-text {
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 4rem;
+}
+
+.work-card-img {
+    max-width: 100%;
+    height: auto;    
+}
+
+.tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.tool-tag{
+    background-color: hsla(12, 85%, 60%, 1);
+    
+}
+
+.skill-tag{
+    background-color: hsla(232, 100%, 74%, 1);
+}
+
+.tag-text {
+    font-weight: 400;
+    font-size: 0.75rem;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 1rem;
+    padding: 0.2rem 0.4rem;
+    margin-right: 0.5rem;
+    width:fit-content;
+    margin-top: 0;
+    margin-bottom: 0.25;
+}
+
+.filler-work-card-img {
+    width: inherit;
+    height: 17.5rem;
+    background: linear-gradient(90deg, hsla(12, 85%, 60%, 1) 0%, hsla(232, 100%, 74%, 1) 99%);
+    border-radius: 0.5rem 0.5rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scrollToTop {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px rgba(0, 0, 0, 0.1) solid;
+    outline:none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    color: hsla(12, 85%, 60%, 1);
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+#scrollToTop:hover {
+    color: hsla(232, 100%, 74%, 1);
+}
+
+.arrow {
+    color: inherit;
+}
+
+@media only screen and (max-width: 0) {
+
+}
+
+@media only screen and (max-width: 576px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .right-page-links {
+        display: none;
+    }
+
+    html {
+        font-size: 15px;
+    }
+
+    .right-cn-symbols {
+        display: none;
+    }
+
+    .icon-row {
+        width: 80%;
+    }
+
+    .hamburger-menu {
+        display: inherit;
+        visibility: visible;
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media only screen and (max-width: 1040px) {
+    .work-card-display {
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .work-card{
+        margin-bottom: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 1120px) { 
+    .hero {
+        width: 80%;
+    }
+
+    .nav-bar-wrapper {
+        width: 80%;
+    }
+
+    .about-me-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%
+    }
+    .me-pic {
+        margin-bottom: 2rem;
+    }
+    .about-me-desc-wrapper {
+        margin: 0;
+        width: 80%;
+    }
+    
+    .work-card-display {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+}
