@@ -5,6 +5,7 @@ $(document).ready(function(){
         $(".overlay-nav-menu").removeClass("expand");
         $(".hamburger-menu-icon").addClass("fa-bars");
         $(".hamburger-menu-icon").removeClass("fa-xmark");
+        hamburgerClickCount++;
     })
 
     $(".page-link").click(function() {
