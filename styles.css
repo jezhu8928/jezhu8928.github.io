@@ -238,7 +238,9 @@ nav {
 
 .about-me-desc-wrapper {
     box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
-    outline: 1px rgba(0, 0, 0, 0.1) solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-style: solid;
 
     margin-left: 6.5rem;
     width: 38.5rem;
@@ -283,7 +285,9 @@ nav {
     text-align: start;
     height: 32rem;
     box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.25);
-    outline: 1px rgba(0, 0, 0, 0.1) solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-style: solid;
 }
 
 .work-card-text {
