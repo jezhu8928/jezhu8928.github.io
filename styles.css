@@ -113,14 +113,17 @@ nav {
 }
 
 .page-link {
-    text-decoration: underline solid hsla(12, 85%, 60%, 1) 0.2rem;
-    transition: text-decoration 0.5s;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: hsla(12, 85%, 60%, 1);
+    text-decoration-thickness: 0.2rem;
+    transition: text-decoration-color 0.5s;
     color: black;
 
 }
 
 .page-link:hover {
-    text-decoration: underline solid hsla(232, 100%, 74%, 1) 0.2rem;
+    text-decoration-color: hsla(232, 100%, 74%, 1);
     cursor: pointer;
 }
 
@@ -204,10 +207,11 @@ nav {
 }
 
 .section-title {
-    text-decoration: underline solid hsla(232, 100%, 74%, 1) 0.2rem;
-    -webkit-text-color-decoration: hsla(232, 100%, 74%, 1);
-    -webkit-text-decoration-style: solid;
-    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: hsla(232, 100%, 74%, 1);
+    text-decoration-thickness: 0.2rem;
+
     margin-bottom: 4rem;
 }
 
