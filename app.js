@@ -17,6 +17,16 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "auto");
     });
 
+    $('.nav-bar-title').click(function() {
+        $('html').animate({scrollTop: 0});
+        $('html').css("scrollBehavior", "auto");
+    });
+
+    $('.site-icon').click(function() {
+        $('html').animate({scrollTop: 0});
+        $('html').css("scrollBehavior", "auto");
+    });
+
     $(window).scroll(function() {    
         var scroll = $(window).scrollTop();    
         if (scroll >= 72) {
